@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        #btn-close-modal {
+            width:100%;
+            text-align: center;
+            cursor:pointer;
+            color:#fff;
+        }
+
+
+      body{
+        background-color: brown;
+      }
+      .redonde{
+        border-radius: 15px;
+      }
+      .sobre:hover{
+      
+        transition-duration: 1s;
+        color: white;
+        width: 600px;
+        height: 220px;
+        background-color:brown;
+        cursor: pointer;
+      }
+      .eye:hover{
+        position: relative;
+        font-size: large;
+        transition-duration: 2s;
+        
+      }
+      .zoom{
+        width: 1000px;
+        height: 1000px;
+        transition-duration: 6s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="container-fluid py-3 px-5 mt-2">
+      <div class="row">
+        <div class="col-12 text-center text-white p-0">
+          <h1 class="display-4">Minis JS <small>&</small> CSS</h1>
+        </div>
+      </div>
+      <div class="row rounded p-5 d-flex justify-content-between" style="background-color: #EBEBEB;">
+
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 m-1 redonde p-0 sobre">
+          <div class="row d-flex justify-content-center shadow bg-white">
+            <div class="col-9 p-2 ">
+              <h5 class="font-weight-bold text-white text-default ">name of project</h5>
+              <p class="text-dark p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, odio. Magnam, lor</p>
+            </div>
+            <div class="col-1 py-5 PX-0 ">
+              <button class="btn bg-white redonde btn-sm p-1 eye">
+                <a id="demo01" href="#animatedModal"><i class="fa fa-eye fa-3x text-default "></i></a> 
+              </button>
+            </div>
+            <div class="col-12 text-center">
+              <figcaption class="blockquote-footer">
+                Creado hace: <cite title="Source Title">10 minutos</cite>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+
+
+      <!--DEMO01-->
+      <div id="animatedModal" class="bg-white">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-end">
+            <div class="col-10 p-3">
+              <h4 class="font-weight-bold text-default">Name of the project</h4>
+            </div>
+            <div class="col-1 p-3">
+              <div  id="btn-close-modal" class="close-animatedModal redonde"> 
+                <i class="far fa-times-circle fa-2x text-danger"></i>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-content px-5 border">
+           <div class="container-fluid p-4 ">
+             <div class="row p-5 bg-white d-flex justify-content-between redonde"  >
+               <div class="col-5 m-3 p-5 border">
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore mollitia quaerat at ad, harum magnam veniam nihil quos non reiciendis dignissimos eum autem commodi debitis numquam, quis, beatae aut consectetur.
+               </div>
+               <div class="col-5 m-3 p-5 border">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore mollitia quaerat at ad, harum magnam veniam nihil quos non reiciendis dignissimos eum autem commodi debitis numquam, quis, beatae aut consectetur.
+              </div>
+              <div class="col-5 m-3 p-5 border">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore mollitia quaerat at ad, harum magnam veniam nihil quos non reiciendis dignissimos eum autem commodi debitis numquam, quis, beatae aut consectetur.
+              </div>
+              <div class="col-5 m-3 p-5 border">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore mollitia quaerat at ad, harum magnam veniam nihil quos non reiciendis dignissimos eum autem commodi debitis numquam, quis, beatae aut consectetur.
+              </div>
+             </div>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 m-1 redonde p-0 sobre">
+      <div class="row d-flex justify-content-center shadow bg-white">
+        <div class="col-9 p-2 ">
+          <h5 class="font-weight-bold text-white text-default ">name of project</h5>
+          <p class="text-dark p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, odio. Magnam, lor</p>
+        </div>
+        <div class="col-1 py-5 PX-0 ">
+          <button class="btn bg-white redonde btn-sm p-1">
+            <a id="demo01" href="#animatedModal"><i class="fa fa-eye fa-3x text-default"></i></a> 
+          </button>
+        </div>
+        <div class="col-12 text-center">
+          <figcaption class="blockquote-footer">
+            Creado hace: <cite title="Source Title">10 minutos</cite>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 m-1 redonde p-0 ">
+          <div class="row d-flex justify-content-center shadow bg-white">
+            <div class="col-9 p-2">
+              <h5 class="font-weight-bold text-white text-default">name of project</h5>
+              <p class="text-dark p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, odio. Magnam, lor</p>
+            </div>
+            <div class="col-3 py-5 ">
+              <button class="btn bg-white redonde btn-sm p-1">
+                <i class="fa fa-eye fa-3x text-default"></i>
+              </button>
+            </div>
+            <div class="col-12 text-center">
+              <figcaption class="blockquote-footer">
+                Creado hace: <cite title="Source Title">10 minutos</cite>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 m-1 redonde p-0 ">
+          <div class="row d-flex justify-content-center shadow bg-white">
+            <div class="col-9 p-2">
+              <h5 class="font-weight-bold text-white text-default">name of project</h5>
+              <p class="text-dark p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, odio. Magnam, lor</p>
+            </div>
+            <div class="col-3 py-5 ">
+              <button class="btn bg-white redonde btn-sm p-1">
+                <i class="fa fa-eye fa-3x text-default"></i>
+              </button>
+            </div>
+            <div class="col-12 text-center">
+              <figcaption class="blockquote-footer">
+                Creado hace: <cite title="Source Title">10 minutos</cite>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-12 text-center text-white">
+          <small>by: Resendiz</small>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- End your project here-->
+  </body>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script src="js/animatedModal.js"></script>
+  <script>
+
+      //demo 01
+      $("#demo01").animatedModal();
+
+
+  </script>
+</html>
